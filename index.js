@@ -15,6 +15,8 @@ var bot = controller.spawn({
 
 bot.startRTM(function (err, bot, payload) {
   if (err) {
+	  console.log(bot)
+	  console.log(payload)
     throw new Error('Could not connect to Slack')
   }
 })
